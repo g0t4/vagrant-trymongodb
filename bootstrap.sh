@@ -6,3 +6,7 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 apt-get -y update
 
 apt-get -y install mongodb-org
+
+cp /vagrant/files/mongod.conf /etc/mongod.conf
+
+restart mongod
